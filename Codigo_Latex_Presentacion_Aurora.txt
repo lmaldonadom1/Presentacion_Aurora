@@ -1,0 +1,213 @@
+\documentclass [xcolor=svgnames, t] {beamer} 
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs, comment} 
+\usepackage[absolute, overlay]{textpos} 
+\usepackage{pgfpages}
+\usepackage[font=footnotesize]{caption}
+\useoutertheme{infolines} 
+
+\definecolor{gold}{RGB}{254, 206, 0}
+
+\setbeamercolor{title in head/foot}{bg=gold, fg=black}
+\setbeamercolor{author in head/foot}{bg=myuniversity}
+\setbeamertemplate{page number in head/foot}{}
+\usepackage{csquotes}
+
+
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+
+
+\usepackage{textpos}
+
+\usepackage{tikz}
+
+\usetheme{Madrid}
+\definecolor{myuniversity}{RGB}{0, 85, 150}
+\usecolortheme[named=myuniversity]{structure}
+\usepackage{tikz}
+
+
+
+\title[Amazon Aurora]{AMAZON AURORA}
+\subtitle{(Motor de Base de Datos)}
+
+\titlegraphic{\includegraphics[height=2.5cm]{ucentral-logo.png}}
+\author[Leidy Maldonado]{Leidy Maldonado Matiz }
+
+
+\date{Marzo 10, 2023}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\logo{\includegraphics[scale=0.15]{logo blanco.png}~%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}
+\frametitle{Tabla de contenido}
+\tableofcontents
+\end{frame}
+
+\section{¿Que es?}
+\begin{frame}{¿Que es?}
+
+
+\includegraphics{Logo-Amazon-Aurora2.jpg}
+
+
+    Amazon Aurora es es un motor de base de datos relacional completamente administrado y compatible con MySQL y PostgreSQL. Cómo MySQL y PostgreSQL combinan la velocidad y la fiabilidad de las bases de datos comerciales de gama alta con la sencillez y la rentabilidad de las bases de datos de código abierto.
+
+
+
+\end{frame}
+
+\section{Caracteristicas y Clientes}
+
+\begin{frame}{Caracteristicas y Clientes}
+
+\textbf{Caracteristicas}\\
+* Alto Rendimiento y escalabilidad \\
+* Alta Disponibilidad y durabilidad \\
+* Alto nivel de seguridad \\
+* Completamente administrado \\
+* Compatibilidad con migraciones: CRM - ERP \\
+* Rentabilidad \\
+* Prodcutividad para los desarrolladores \\
+\vspace{5mm}
+
+\textbf{Clientes} 
+
+* Samsung: migro mil millones de cuentas de usuario \\
+* Halliburton: rendimiento de SAS hasat un 30 \\
+* Nintendo: respaldar Mario Kart Tour \\
+* A+E Networds: crea aplicaciones nativas en la nube 
+\includegraphics[scale=0.4]{Clientes.jpg}
+
+\end{frame}
+
+\section{Arquitectura}
+\begin{frame}{Arquitectura de base de datos de Aurora}
+
+
+\includegraphics[scale=0.65]{Clusters_BD_Aurora.jpg}
+
+\end{frame}
+
+\section{Configuración}
+\begin{frame}{Configuración}
+
+1. Inicie sesión en la consola de administración de AWS y abra RDS.
+\includegraphics[scale=0.5]{Paso_1.jpg}
+
+2. Haga clic en crear base de datos.
+\includegraphics[scale=0.5]{Paso_2.jpg}
+
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+3. Seleccione Opción de motor as Amazona Aurora.
+
+\includegraphics[scale=0.4]{Paso_3.jpg}
+
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+4. Seleccione la pestaña aurora mysql versión que necesita.
+\includegraphics[scale=0.5]{Paso_4.jpg}
+
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+5. Cree un identificador de clúster de base de datos y establezca el nombre de usuario y la contraseña de configuración de credenciales.
+
+\includegraphics[scale=0.4]{Paso_5.jpg}
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+6. Seleccione la pestaña configuración de la instancia de la opción desplegable y elija una opción para crear una réplica o no.
+
+\includegraphics[scale=0.4]{Paso_6.jpg}
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+7. Seleccione la pestaña opciones de conectividad como se muestra a continuación.
+
+\includegraphics[scale=0.4]{Paso_7.jpg}
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+8. Elija entre grupo de seguridad de VPC existente o crea uno nuevo.
+
+\includegraphics[scale=0.4]{Paso_8.jpg}
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+9. Permitir monitoreo mejorado, Haga click en el botón granularidad y monitoreo opción de rol.
+
+10. Finalmente, haga clic en crear base de datos.
+
+\includegraphics[scale=0.4]{Paso_10.jpg}
+
+\end{frame}
+
+\begin{frame}{Configuración}
+
+11. Ha creado correctamente la base de datos de Amazon Aurora.
+
+\includegraphics[scale=0.6]{Paso_11.jpg}
+
+\end{frame}
+
+\section{Casos de Uso}
+\begin{frame}{Casos de Uso}
+
+* \textbf{Modernización de las aplicaciones para empresa:} Opera aplicaciones empresariales CRM - ERP\\
+* \textbf{Crear aplicaciones SaaS}\\
+* \textbf{Implemente aplicaciones distribuidas globalmente:} se puede desarrollar aplicaciones para internet como videojuegos, aplicaciones de redes social y servicios en línea\\
+* \textbf{Trabajo sin servidores:} delegar la administración y solo se paga la capacidad consumida.
+
+\end{frame}
+
+ \section{Bibliografia}   
+\begin{frame}{Bibliografia}
+
+          
+* Aurora {https://aws.amazon.com/es/rds/aurora/}\\
+* Todo sobre Aurora {https://geekflare.com/es/amazon-aurora/}\\
+* Arquitectura Aurora {https://aws.amazon.com/es/solutions/implementations/aurora-postgresql}
+
+\end{frame}
+
+\end{document}
